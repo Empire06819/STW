@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stirring the Waters Ministry</title>
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a modern, youth-focused look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                navy: "#0A192F",
+                cyan: "#00F2FE",
+                gold: "#F5A623",
+                dark: "#020C1B",
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom Glowing Effects */
+      body {
+        background-color: #0a192f;
+        color: white;
+        overflow-x: hidden;
+      }
+      .glow-cyan {
+        box-shadow: 0 0 40px rgba(0, 242, 254, 0.3);
+      }
+      .text-gradient {
+        background: linear-gradient(to right, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bg-pattern {
+        background-image: radial-gradient(
+          rgba(0, 242, 254, 0.1) 1px,
+          transparent 1px
+        );
+        background-size: 40px 40px;
+      }
+    </style>
+  </head>
+  <body class="antialiased bg-pattern">
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-brand-navy/80 backdrop-blur-md border-b border-white/10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold tracking-tighter">
+          <span class="text-white">STIRRING</span
+          ><span class="text-brand-cyan">THE WATERS</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#about" class="hover:text-brand-cyan transition">About</a>
+          <a href="#fellowship" class="hover:text-brand-cyan transition"
+            >Fellowship</a
+          >
+          <a href="#location" class="hover:text-brand-cyan transition"
+            >Location</a
+          >
+        </div>
+        <a
+          href="#location"
+          class="bg-brand-cyan text-brand-navy px-5 py-2 rounded-full font-bold hover:bg-white transition duration-300"
+        >
+          Join Us This Sunday
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+    >
+      <!-- Background Glowing Orbs -->
+      <div
+        class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-cyan/20 rounded-full blur-[120px] animate-pulse-slow"
+      ></div>
+      <div
+        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-[120px] animate-pulse-slow"
+      ></div>
+
+      <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div
+          class="inline-block mb-4 px-4 py-1 rounded-full border border-brand-cyan/30 bg-brand-cyan/10 text-brand-cyan font-medium text-sm"
+        >
+          A Nondenominational Christian Assembly
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          Experience <br />
+          <span class="text-gradient">Divine Intervention</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          A vibrant, youth-focused ministry in the heart of Lagos. Step into the
+          waters, discover your purpose, and live a life of impact.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#fellowship"
+            class="bg-brand-cyan text-brand-navy px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition transform glow-cyan"
+          >
+            Service Times
+          </a>
+          <a
+            href="#location"
+            class="border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition"
+          >
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="about" class="py-24 bg-brand-dark relative">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Image Placeholder Frame -->
+        <div
+          class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-brand-navy flex items-center justify-center group"
+        >
+          <img
+            src="ChatGPT Image May 27, 2026, 04_20_47 AM.png"
+            alt="Pastor Segun Aderogba"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-navy to-transparent z-10"
+          ></div>
+        </div>
+
+        <div>
+          <h2
+            class="text-brand-gold font-semibold tracking-wider uppercase mb-2"
+          >
+            The Leadership Note
+          </h2>
+          <h3 class="text-4xl md:text-5xl font-bold mb-6">
+            Pastor Segun Aderogba
+          </h3>
+          <p>(Man Of The Word)<br /></p>
+          <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+            Leading with a vision for discipleship and deep spiritual worship,
+            Pastor Segun Aderogba fosters an environment where the youth can
+            experience genuine encounters with God.
+          </p>
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+            Under his leadership, Stirring the Waters Ministry has become a
+            beacon for those seeking wisdom for a life of impact and
+            uncompromised biblical teaching.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fellowship & Services -->
+    <section id="fellowship" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Connect & Fellowship</h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Join us in person or stay updated with our weekly spiritual
+            outreaches online.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-brand-dark border border-white/10 rounded-3xl p-10 hover:border-brand-cyan/50 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-brand-cyan"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Sunday Services</h3>
+            <p class="text-gray-400 mb-6">
+              Our regular weekly gathering for vibrant worship, deep teaching,
+              and community fellowship.
+            </p>
+            <span
+              class="inline-block bg-white/5 px-4 py-2 rounded-lg text-sm text-brand-cyan"
+              >Every Sunday Evening 5:00 PM</span
+            >
+          </div>
+
+          <!-- Service Card 3-->
+          <div
+            class="bg-brand-dark border border-white/10 rounded-3xl p-10 hover:border-brand-gold/50 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-brand-gold/10 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-brand-gold"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Midweek Service</h3>
+            <p class="text-gray-400 mb-6">
+              Join Us every Wednesday for a powerful time of worship, prayer,
+              and teaching to strengthen your faith and deepen your relationship
+              with God.
+            </p>
+            <span
+              class="inline-block bg-white/5 px-4 py-2 rounded-lg text-sm text-brand-gold"
+              >Wednesday by 6:00 PM</span
+            >
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-brand-dark border border-white/10 rounded-3xl p-10 hover:border-brand-gold/50 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-brand-gold/10 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-brand-gold"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Divine Intervention</h3>
+            <p class="text-gray-400 mb-6">
+              Periodic revival meetings and strategic spiritual encounters
+              designed to ignite your faith.
+            </p>
+            <span
+              class="inline-block bg-white/5 px-4 py-2 rounded-lg text-sm text-brand-gold"
+              >Check Socials for Next Date</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" class="py-24 bg-brand-cyan text-brand-navy">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center"
+      >
+        <div>
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+            Find Your Way Here
+          </h2>
+          <p class="text-brand-navy/80 text-lg mb-8 font-medium">
+            Located just a few minutes drive from Bariga/Shomolu, depending on
+            traffic via the Ogudu link road. Highly accessible for the local
+            youth community.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="mt-1 bg-brand-navy text-brand-cyan p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-xl">Address</h4>
+                <p class="text-brand-navy/80">
+                  7 Adebare Street, Ogudu Roundabout,<br />Lagos (Directly
+                  beside Bokku Mart)
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="mt-1 bg-brand-navy text-brand-cyan p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-xl">Contact Lines</h4>
+                <p class="text-brand-navy/80">
+                  +234 916 588 3309<br />+234 814 794 4518
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map/Social Card -->
+        <div
+          class="bg-brand-navy rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-brand-cyan/20 blur-[50px]"
+          ></div>
+          <h3 class="text-2xl font-bold mb-4 relative z-10">
+            Stay Connected Online
+          </h3>
+          <p class="text-gray-400 mb-8 relative z-10">
+            Follow our social platforms to stay updated with weekly programs and
+            event flyers.
+          </p>
+
+          <div class="space-y-4 relative z-10">
+            <a
+              href="#"
+              class="flex items-center justify-between bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition"
+            >
+              <span class="font-medium">Instagram</span>
+              <span class="text-brand-cyan">@StirringTheWaters</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-between bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition"
+            >
+              <span class="font-medium">Facebook</span>
+              <span class="text-brand-cyan">Stirring the Waters Ministry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-8 border-t border-white/5 text-center">
+      <p class="text-gray-500 text-sm">
+        © 2026 Stirring the Waters Ministry. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
